@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./scss/header.css";
 
 // components
-import HeaderItem from "./HeaderItem";
+import Navbar from "./Navbar";
 
 // hooks
 import useGetCategories from "../../hooks/useGetCategories";
@@ -21,16 +21,11 @@ function Header() {
           CAT APP
         </h1>
       </div>
-      <div className="header-elements">
-        {categories?.map((category) => (
-          <HeaderItem
-            active={activeId === category.id}
-            category={category}
-            onActiveChange={onActiveChange}
-            key={`heder-category-${category.id}`}
-          />
-        ))}
-      </div>
+      <Navbar
+        categories={categories}
+        activeId={activeId}
+        onActiveChange={onActiveChange}
+      />
     </div>
   );
 }

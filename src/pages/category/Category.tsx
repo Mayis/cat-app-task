@@ -1,10 +1,12 @@
 import React, { useState } from "react";
-import { useParams } from "react-router-dom";
-import Picture from "../home/Picture";
-import useGetPictures from "../../hooks/useGetPictures";
+// components
+import Picture from "../../components/common/Picture";
 import Loading from "../../components/common/Loading";
-import ReactPaginate from "react-paginate";
 import Paginate from "../../components/common/Paginate";
+
+// hooks
+import { useParams } from "react-router-dom";
+import useGetPictures from "../../hooks/useGetPictures";
 
 function Category() {
   const { category_id } = useParams();

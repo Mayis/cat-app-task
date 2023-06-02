@@ -1,6 +1,6 @@
 import { useState } from "react";
 // components
-import Picture from "./Picture";
+import Picture from "../../components/common/Picture";
 
 // hooks
 import useGetPictures from "../../hooks/useGetPictures";

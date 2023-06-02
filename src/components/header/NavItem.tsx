@@ -8,7 +8,7 @@ interface Props {
   onActiveChange: (id: number) => void;
   active: boolean;
 }
-function HeaderItem({ category, onActiveChange, active }: Props) {
+function NavItem({ category, onActiveChange, active }: Props) {
   const navigate = useNavigate();
 
   const onNavigate = (id: number) => {
@@ -27,4 +27,4 @@ function HeaderItem({ category, onActiveChange, active }: Props) {
   );
 }
 
-export default HeaderItem;
+export default NavItem;

@@ -25,11 +25,6 @@
   align-items: center;
   gap: 20px;
 }
-@media screen and (max-width: 800px) {
-  #header .header-elements {
-    gap: 15px;
-  }
-}
 #header .header-elements .active-item {
   color: black;
 }
