@@ -6,9 +6,9 @@ import { Provider } from "react-redux";
 import store from "./redux/store";
 
 // components
-import Home from "./components/home/Home";
+import Home from "./pages/home/Home";
 import Header from "./components/header/Header";
-import Category from "./components/category/Category";
+import Category from "./pages/category/Category";
 
 function App() {
   return (

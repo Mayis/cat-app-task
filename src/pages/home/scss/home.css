@@ -22,23 +22,23 @@
      object-fit: cover;
 }
 
-.footer {
+.paginate-parent {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px 0px;
 }
-.footer .react-paginate {
+.paginate-parent .react-paginate {
   display: flex;
   gap: 16px;
   text-decoration: none;
   list-style: none;
 }
-.footer .react-paginate .page {
+.paginate-parent .react-paginate .page {
   color: black;
   font-size: 20px;
   cursor: pointer;
 }
-.footer .react-paginate .active-page {
+.paginate-parent .react-paginate .active-page {
   color: blue;
 }/*# sourceMappingURL=home.css.map */

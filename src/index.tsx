@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./global.css";
-import "../src/components/home/scss/home.css";
+import "./pages/home/scss/home.css";
 
 import App from "./App";
 
