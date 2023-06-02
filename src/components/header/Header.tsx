@@ -5,14 +5,17 @@ import HeaderItem from "./HeaderItem";
 
 // hooks
 import useGetCategories from "../../hooks/useGetCategories";
+import { useNavigate } from "react-router-dom";
 
 function Header() {
   const { categories } = useGetCategories();
-
+  const navigate = useNavigate();
   return (
     <div id="header">
       <div className="header-logo">
-        <h1 className="cat-logo">CAT APP</h1>
+        <h1 className="cat-logo" onClick={() => navigate("/")}>
+          CAT APP
+        </h1>
       </div>
       <div className="header-elements">
         {categories?.map((category) => (

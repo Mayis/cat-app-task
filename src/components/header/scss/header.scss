@@ -16,7 +16,7 @@
 
   .header-logo {
     .cat-logo {
-      cursor: default;
+      cursor: pointer;
     }
   }
   .header-elements {
@@ -26,6 +26,9 @@
     gap: 20px;
     @media screen and (max-width: 800px) {
       gap: 15px;
+    }
+    .active-item {
+      color: black;
     }
     .header-item-text {
       text-transform: capitalize;

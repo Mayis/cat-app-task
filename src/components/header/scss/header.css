@@ -17,7 +17,7 @@
   }
 }
 #header .header-logo .cat-logo {
-  cursor: default;
+  cursor: pointer;
 }
 #header .header-elements {
   display: flex;
@@ -29,6 +29,9 @@
   #header .header-elements {
     gap: 15px;
   }
+}
+#header .header-elements .active-item {
+  color: black;
 }
 #header .header-elements .header-item-text {
   text-transform: capitalize;
