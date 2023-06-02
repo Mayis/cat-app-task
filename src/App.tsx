@@ -1,7 +1,11 @@
 import React from "react";
-import { Provider } from "react-redux";
+
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+// redux
+import { Provider } from "react-redux";
 import store from "./redux/store";
+
+// components
 import Home from "./components/home/Home";
 import Header from "./components/header/Header";
 import Category from "./components/category/Category";

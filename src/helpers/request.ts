@@ -2,14 +2,11 @@ import axios, { AxiosRequestConfig } from "axios";
 
 export default async function request(
   method: string,
-  url: string,
-  body: any
+  url: string
 ): Promise<any> {
   const options: AxiosRequestConfig = {
     method,
     url,
-    data: body,
-    headers: {},
   };
 
   try {
